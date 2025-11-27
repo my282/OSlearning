@@ -1,6 +1,6 @@
 *.img
 .vscode
-.EFI
-.fd
-.so
-.o
+*.EFI
+*.fd
+*.so
+*.o
