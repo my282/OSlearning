@@ -7,8 +7,7 @@
   ENTRY_POINT = UefiMain
 
 [Sources]
-  HelloWorld.c
-
+  main.c
 [Packages]
   MdePkg/MdePkg.dec
 
