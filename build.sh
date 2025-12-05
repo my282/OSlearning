@@ -4,11 +4,11 @@
 EDK2_PATH="$HOME/src/edk2"
 DSC_FILE="OvmfPkg/OvmfPkgX64.dsc"
 TARGET_ARCH="X64"
-TOOLCHAIN="GCC"  # または GCC
+TOOLCHAIN="GCC" 
 BUILD_MODE="RELEASE" # または DEBUG
 
 # コピー元のEFIファイル名（あなたのinfのBASE_NAMEに合わせてください）
-EFI_NAME="HelloWorld.efi"
+EFI_NAME="memorymap.efi"
 
 # --- ビルド実行 ---
 # --- 成果物の回収 ---
