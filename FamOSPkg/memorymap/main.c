@@ -3,6 +3,7 @@
 #include <Protocol/SimpleFileSystem.h>
 #include <Protocol/LoadedImage.h>
 #include <Protocol/SimpleFileSystem.h>
+#include "ProcessorBind.h"
 #include "Uefi/UefiBaseType.h"
 #include "Uefi/UefiMultiPhase.h"
 #include "Uefi/UefiSpec.h"
@@ -65,7 +66,7 @@ EFI_STATUS SaveMemoryMap(struct MemoryMap* map, EFI_FILE_PROTOCOL* file){
   len = AsciiStrLen(header);
   file->Write(file, &len, header);
 
-  Print(L"map->buffer = %081x, map->map_size = %081x\n",
+  Print(L"map->buffer = %016lx, map->map_size = %016lx\n",
         map->buffer, map->map_size);
   EFI_PHYSICAL_ADDRESS iter;
   int i;
@@ -75,7 +76,7 @@ EFI_STATUS SaveMemoryMap(struct MemoryMap* map, EFI_FILE_PROTOCOL* file){
     EFI_MEMORY_DESCRIPTOR* desc = (EFI_MEMORY_DESCRIPTOR*)iter;
     len = AsciiSPrint(
       buf, sizeof(buf),
-      "%u, %x, %-ls, %081x, %lx, %lx\n",
+      "%2u, %x, %-25ls, %016lx, %lx, %lx\n",
       i, desc->Type, GetMemoryTypeUnicode(desc->Type),
       desc->PhysicalStart, desc->NumberOfPages,
       desc->Attribute & 0xffffflu);
@@ -126,5 +127,14 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
 
   SaveMemoryMap(&memmap, memmap_file);
   memmap_file->Close(memmap_file);
+  Print(L"Press any key to exit...\n");
+  gST->ConIn->Reset(gST->ConIn, FALSE);
+
+  UINTN wait_index;
+  gBS->WaitForEvent(
+    1,
+    &gST->ConIn->WaitForKey,
+    &wait_index
+  );
   return EFI_SUCCESS;
 }
