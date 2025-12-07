@@ -1,6 +1,6 @@
 Build environment: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
-SOURCE_DATE_EPOCH not set - using 1765084168
-Build start time: 14:09:28, Dec.07 2025
+SOURCE_DATE_EPOCH not set - using 1765086850
+Build start time: 14:54:10, Dec.07 2025
 
 WORKSPACE        = /home/fm282/src/edk2
 EDK_TOOLS_PATH   = /home/fm282/src/edk2/BaseTools
@@ -14,22 +14,22 @@ Build target     = RELEASE
 Toolchain        = GCC
 
 Active Platform          = /home/fm282/src/edk2/OvmfPkg/OvmfPkgX64.dsc
-....... done!
+..... done!
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/AcpiTimerLib/DxeAcpiTimerLib.inf [X64]
 Building ... /home/fm282/src/edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/DxePciLibI440FxQ35/DxePciLibI440FxQ35.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/DxeHobLib/DxeHobLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/StackCheckLibNull/StackCheckLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BasePciCf8Lib/BasePciCf8Lib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BasePciExpressLib/BasePciExpressLib.inf [X64]
-Building ... /home/fm282/src/edk2/MdePkg/Library/UefiLib/UefiLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdePkg/Library/UefiLib/UefiLib.inf [X64]
 Building ... /home/fm282/src/edk2/MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -118,10 +118,10 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/PxeBcPcdProducerLib/PxeBcPcdProducerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -140,10 +140,10 @@ make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/Library/UefiShellBcfgCommandLib/UefiShellBcfgCommandLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/Library/UefiShellCommandLib/UefiShellCommandLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/Library/UefiHandleParsingLib/UefiHandleParsingLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/Library/DxeHttpLib/DxeHttpLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -170,10 +170,10 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/SecurityPkg/Library/DxeTpm2MeasureBootLib/DxeTpm2MeasureBootLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/DxeSecurityManagementLib/DxeSecurityManagementLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/PeiCoreEntryPoint/PeiCoreEntryPoint.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf [X64]
@@ -194,15 +194,15 @@ Building ... /home/fm282/src/edk2/OvmfPkg/Library/PlatformInitLib/PlatformInitLi
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/QemuFwCfgS3Lib/PeiQemuFwCfgS3LibFwCfg.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/PeiResourcePublicationLib/PeiResourcePublicationLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/HardwareInfoLib/PeiHardwareInfoLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/CryptoPkg/Library/BaseCryptLib/PeiCryptLib.inf [X64]
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/QemuFwCfgLib/QemuFwCfgPeiLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/SecurityPkg/Library/PeiTpmMeasurementLib/PeiTpmMeasurementLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/BaseMemEncryptTdxLib/BaseMemEncryptTdxLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -210,8 +210,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/UefiScsiLib/UefiScsiLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/UefiDevicePathLib/UefiDevicePathLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/PlatformBootManagerLib/PlatformBootManagerLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/BootLogoLib/BootLogoLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -234,8 +234,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/LoadLinuxLib/LoadLinuxLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/MpInitLibDepLib/PeiMpInitLibMpDepLib.inf [X64]
-Building ... /home/fm282/src/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib.inf [X64]
 Building ... /home/fm282/src/edk2/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/AcpiTimerLib/BaseAcpiTimerLib.inf [X64]
@@ -264,18 +264,18 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BaseOrderedCollectionRedBlackTreeLib/BaseOrderedCollectionRedBlackTreeLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/AcpiPlatformLib/DxeAcpiPlatformLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/QemuFwCfgS3Lib/DxeQemuFwCfgS3LibFwCfg.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/FrameBufferBltLib/FrameBufferBltLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/fm282/src/edk2/OvmfPkg/IntelTdx/TdxHelperLib/SecTdxHelperLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/OvmfPkg/IntelTdx/TdxHelperLib/SecTdxHelperLib.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/LzmaCustomDecompressLib/LzmaCustomDecompressLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/SecPeiCpuExceptionHandlerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BasePeCoffLib/BasePeCoffLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/TdxMailboxLib/TdxMailboxLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -301,8 +301,8 @@ Building ... /home/fm282/src/edk2/OvmfPkg/Library/CcExitLib/SecCcExitLib.inf [X6
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Library/PiDxeS3BootScriptLib/DxeS3BootScriptLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/fm282/src/edk2/OvmfPkg/Library/LockBoxLib/LockBoxDxeLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/OvmfPkg/Library/LockBoxLib/LockBoxDxeLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BaseSmbusLibNull/BaseSmbusLibNull.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -335,8 +335,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/CcProbeLib/SecPeiCcProbeLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/PeiServicesLib/PeiServicesLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/PeiHobLib/PeiHobLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -381,62 +381,62 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/AmdSvsmLib/AmdSvsmLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/CcExitLib/CcExitLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Library/BaseMemEncryptSevLib/DxeMemEncryptSevLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdePkg/Library/BaseCacheMaintenanceLib/BaseCacheMaintenanceLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioNetDxe/VirtioNet.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Application/BootManagerMenuApp/BootManagerMenuApp.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/SataControllerDxe/SataControllerDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/PciHotPlugInitDxe/PciHotPlugInit.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/DynamicCommand/TftpDynamicCommand/TftpDynamicCommand.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Core/DxeIplPeim/DxeIpl.inf [X64]
-Building ... /home/fm282/src/edk2/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/SnpDxe/SnpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/QemuKernelLoaderFsDxe/QemuKernelLoaderFsDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioSerialDxe/VirtioSerial.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Sd/SdDxe/SdDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/LocalApicTimerDxe/LocalApicTimerDxe.inf [X64]
 Building ... /home/fm282/src/edk2/NetworkPkg/TcpDxe/TcpDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/ArpDxe/ArpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/DisplayEngineDxe/DisplayEngineDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Virtio10Dxe/Virtio10.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf [X64]
 Building ... /home/fm282/src/edk2/SecurityPkg/RandomNumberGenerator/RngDxe/RngDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/Udp4Dxe/Udp4Dxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/VlanConfigDxe/VlanConfigDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Usb/UsbMassStorageDxe/UsbMassStorageDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/PciHostBridgeDxe/PciHostBridgeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf [X64]
@@ -447,26 +447,26 @@ Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/EbcDxe/EbcDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Core/Dxe/DxeMain.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Application/UiApp/UiApp.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/UefiPxeBcDxe/UefiPxeBcDxe.inf [X64]
 Building ... /home/fm282/src/edk2/NetworkPkg/Dhcp4Dxe/Dhcp4Dxe.inf [X64]
 Building ... /home/fm282/src/edk2/ShellPkg/Application/Shell/Shell.inf [X64]
-make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/TdxDxe/TdxDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/DynamicCommand/HttpDynamicCommand/HttpDynamicCommand.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/ResetSystemRuntimeDxe/ResetSystemRuntimeDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Variable/RuntimeDxe/VariableRuntimeDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/Conf/.cache/280251c4-1d09-4035-9062-839acb5f18c1CpuMpPei.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioPciDeviceDxe/VirtioPciDeviceDxe.inf [X64]
@@ -476,38 +476,38 @@ Building ... /home/fm282/src/edk2/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/WatchdogTimerDxe/WatchdogTimer.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/LinuxInitrdDynamicShellCommand/LinuxInitrdDynamicShellCommand.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Console/GraphicsConsoleDxe/GraphicsConsoleDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/PCD/Pei/Pcd.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/IncompatiblePciDeviceSupportDxe/IncompatiblePciDeviceSupport.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/FamOSPkg/memorymap/memorymap.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/HiiDatabaseDxe/HiiDatabaseDxe.inf [X64]
-"gcc" -MMD -MF /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/main.obj.deps -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=memorymapStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -c -o /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/./main.obj -I/home/fm282/src/edk2/FamOSPkg/memorymap -I/home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG -I/home/fm282/src/edk2/MdePkg -I/home/fm282/src/edk2/MdePkg/Include -I/home/fm282/src/edk2/MdePkg/Test/UnitTest/Include -I/home/fm282/src/edk2/MdePkg/Test/Mock/Include -I/home/fm282/src/edk2/MdePkg/Library/MipiSysTLib/mipisyst/library/include -I/home/fm282/src/edk2/MdePkg/Include/X64 /home/fm282/src/edk2/FamOSPkg/memorymap/main.c
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Disk/UdfDxe/UdfDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioGpuDxe/VirtioGpu.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Core/Pei/PeiMain.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/QemuRamfbDxe/QemuRamfbDxe.inf [X64]
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioFsDxe/VirtioFsDxe.inf [X64]
 Building ... /home/fm282/src/edk2/SecurityPkg/Tcg/MemoryOverwriteControl/TcgMor.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/NetworkPkg/DpcDxe/DpcDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -526,42 +526,39 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/Conf/.cache/6490f1c5-ebcc-4665-8892-0075b9bb49b7CpuDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/FatPkg/EnhancedFatDxe/Fat.inf [X64]
-rm -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/memorymap.lib
-Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf [X64]
-"gcc-ar" cr /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/memorymap.lib  @/home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/object_files.lst
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Sd/EmmcDxe/EmmcDxe.inf [X64]
 Building ... /home/fm282/src/edk2/UefiCpuPkg/CpuIo2Dxe/CpuIo2Dxe.inf [X64]
-"gcc" -o /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,_ModuleEntryPoint -u _ModuleEntryPoint -Wl,-Map,/home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os -Wl,--start-group,@/home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/static_library_files.lst,--end-group -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=memorymapStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=/home/fm282/src/edk2/BaseTools/Scripts/GccBase.lds -Wno-error
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/SioBusDxe/SioBusDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/PCD/Dxe/Pcd.inf [X64]
-Building ... /home/fm282/src/edk2/OvmfPkg/VirtioBlkDxe/VirtioBlk.inf [X64]
-Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/OvmfPkg/VirtioBlkDxe/VirtioBlk.inf [X64]
+make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/IoMmuDxe/IoMmuDxe.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Scsi/ScsiDiskDxe/ScsiDiskDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/BdsDxe/BdsDxe.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Logo/LogoDxe.inf [X64]
 Building ... /home/fm282/src/edk2/OvmfPkg/AmdSevDxe/AmdSevDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/UefiCpuPkg/CpuMpPei/CpuMpPei.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioKeyboardDxe/VirtioKeyboard.inf [X64]
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Acpi/BootScriptExecutorDxe/BootScriptExecutorDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -578,8 +575,8 @@ Building ... /home/fm282/src/edk2/PcAtChipsetPkg/PcatRealTimeClockRuntimeDxe/Pca
 Building ... /home/fm282/src/edk2/OvmfPkg/AcpiPlatformDxe/AcpiPlatformDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
-Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf [X64]
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioScsiDxe/VirtioScsi.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf [X64]
@@ -590,26 +587,27 @@ Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2Keyboar
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Acpi/S3SaveStateDxe/S3SaveStateDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/ShellPkg/DynamicCommand/VariablePolicyDynamicCommand/VariablePolicyDynamicCommand.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/ReportStatusCodeRouter/Pei/ReportStatusCodeRouterPei.inf [X64]
-make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/SdMmcPciHcDxe/SdMmcPciHcDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/StatusCodeHandler/Pei/StatusCodeHandlerPei.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/VirtioRngDxe/VirtioRng.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Usb/UsbBusDxe/UsbBusDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Bus/Pci/PciSioSerialDxe/PciSioSerialDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/SmbiosMeasurementDxe/SmbiosMeasurementDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/UefiCpuPkg/CpuDxe/CpuDxe.inf [X64]
@@ -617,26 +615,16 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/Metronome/Metronome.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
-"objcopy"  /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll
-cp -p -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.debug
-"objcopy" --strip-unneeded -R .eh_frame /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll
-"objcopy"  /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll
-cp -p -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.debug /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/memorymap.debug
-"GenFw" -e UEFI_APPLICATION -o /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/memorymap.efi /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/memorymap.dll --zero
-cp -p -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/memorymap.efi /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG
-cp -p -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT/memorymap.efi /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/memorymap.efi
-cp -p -f /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/DEBUG/*.map /home/fm282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/memorymap/memorymap/OUTPUT
 Building ... /home/fm282/src/edk2/OvmfPkg/Tcg/TdTcg2Dxe/TdTcg2Dxe.inf [X64]
 Building ... /home/fm282/src/edk2/NetworkPkg/IScsiDxe/IScsiDxe.inf [X64]
 Building ... /home/fm282/src/edk2/OvmfPkg/Tcg/TdTcg2Pei/TdTcg2Pei.inf [X64]
-Building ... /home/fm282/src/edk2/SecurityPkg/Hash2DxeCrypto/Hash2DxeCrypto.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/fm282/src/edk2/SecurityPkg/Hash2DxeCrypto/Hash2DxeCrypto.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/PlatformPei/PlatformPei.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/fm282/src/edk2/OvmfPkg/Sec/SecMain.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -791,6 +779,6 @@ DXEFV [22%Full] 15204352 (0xe80000) total, 3423464 (0x343ce8) used, 11780888 (0x
 FVMAIN_COMPACT [31%Full] 3440640 (0x348000) total, 1079152 (0x107770) used, 2361488 (0x240890) free
 
 - Done -
-Build end time: 14:09:42, Dec.07 2025
-Build total time: 00:00:14
+Build end time: 14:54:22, Dec.07 2025
+Build total time: 00:00:12
 
