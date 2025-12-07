@@ -1,8 +1,7 @@
 OVMF_PATH="/usr/share/ovmf/OVMF.fd"
 IMAGE_DIR="./dist"
-
 if [ -f "$IMAGE_DIR/memmap" ]; then
-    rm "$IMAGE_DIR/memmap"
+  rm "$IMAGE_DIR/memmap"
 fi
 
 echo "Starting QEMU..."

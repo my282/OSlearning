@@ -1,6 +1,5 @@
 // clang-format off
 #include <Uefi.h>
-#include <Protocol/SimpleFileSystem.h>
 #include <Protocol/LoadedImage.h>
 #include <Protocol/SimpleFileSystem.h>
 #include "ProcessorBind.h"
@@ -117,16 +116,29 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
   GetMemoryMap(&memmap);
 
   EFI_FILE_PROTOCOL* root_dir;
-  OpenRootDir(ImageHandle, &root_dir);
+  EFI_STATUS status;
+
+  
+  status = OpenRootDir(ImageHandle, &root_dir);
+  if(EFI_ERROR(status)) {
+    Print(L"Error: OpenRootDir failed: %r\n", status);
+    return status;
+  }
 
   EFI_FILE_PROTOCOL* memmap_file;
-  root_dir->Open(
+  status = root_dir->Open(
     root_dir, &memmap_file, L"\\memmap",
     EFI_FILE_MODE_READ | EFI_FILE_MODE_WRITE | EFI_FILE_MODE_CREATE, 0
   );
-
+  if(EFI_ERROR(status)){
+    Print(L"Error: Failed to open file \\memmap: %r\n", status);
+    root_dir->Close(root_dir);
+    return status;
+  }
   SaveMemoryMap(&memmap, memmap_file);
+  memmap_file->Flush(memmap_file);
   memmap_file->Close(memmap_file);
+  Print(L"File created successfully. \n");
   Print(L"Press any key to exit...\n");
   gST->ConIn->Reset(gST->ConIn, FALSE);
 
