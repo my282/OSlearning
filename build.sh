@@ -4,11 +4,11 @@
 EDK2_PATH="$HOME/src/edk2"
 DSC_FILE="OvmfPkg/OvmfPkgX64.dsc"
 TARGET_ARCH="X64"
-TOOLCHAIN="GCC"  # または GCC
+TOOLCHAIN="GCC" 
 BUILD_MODE="RELEASE" # または DEBUG
-
+ORIGINAL_DIR=&(pwd)
 # コピー元のEFIファイル名（あなたのinfのBASE_NAMEに合わせてください）
-EFI_NAME="HelloWorld.efi"
+EFI_NAME="memorymap.efi"
 
 # --- ビルド実行 ---
 # --- 成果物の回収 ---
@@ -51,3 +51,15 @@ echo "----------------------------------------"
 echo "Success! File copied to:"
 echo "$DIST_DIR/BOOTX64.EFI"
 echo "----------------------------------------"
+
+# 1.200MBのファイル生成
+qemu-img create -f raw "$ORIGINAL_DIR/disk.img" 200M
+# 2.作成したファイルをFAT32形式でフォーマット
+mkfs.fat -n 'FamOS' -s 2 -f 2 -R 32 -F 32 "$ORIGINAL_DIR/disk.img" 
+# 3.必要なフォルダを作る
+mmd -i "$ORIGINAL_DIR/disk.img" ::/EFI
+mmd -i "$ORIGINAL_DIR/disk.img" ::/EFI/BOOT
+# 4. コンパイルした.efiファイルをdisk.imgの中にコピー
+mcopy -i "$ORIGINAL_DIR/disk.img" "$DIST_DIR/BOOTX64.EFI" ::/EFI/BOOT/BOOTX64.EFI
+
+echo "disk.img created successfully."
