@@ -4,6 +4,7 @@
 #include <Protocol/SimpleFileSystem.h>
 #include "ProcessorBind.h"
 #include "Protocol/GraphicsOutput.h"
+#include "Protocol/SimpleTextOut.h"
 #include "Uefi/UefiBaseType.h"
 #include "Uefi/UefiMultiPhase.h"
 #include "Uefi/UefiSpec.h"
@@ -112,6 +113,54 @@ EFI_STATUS OpenRootDir(EFI_HANDLE ImageHandle, EFI_FILE_PROTOCOL** root){
   return EFI_SUCCESS;
 }
 
+EFI_STATUS OpenGOP(EFI_HANDLE ImageHandle,
+                   EFI_GRAPHICS_OUTPUT_PROTOCOL** gop){
+  EFI_STATUS status;
+  UINTN num_gop_handles = 0;
+  EFI_HANDLE* gop_handles = NULL;
+
+  status = gBS->LocateHandleBuffer(
+    ByProtocol,
+    &gEfiGraphicsOutputProtocolGuid,
+    NULL,
+    &num_gop_handles,
+    &gop_handles
+  );
+  if(EFI_ERROR(status)){
+    return status;
+  }
+  
+  status = gBS->OpenProtocol(
+    gop_handles[0],
+    &gEfiGraphicsOutputProtocolGuid,
+    (VOID**)gop,
+    ImageHandle,
+    NULL,
+    EFI_OPEN_PROTOCOL_BY_HANDLE_PROTOCOL
+  );
+  if(EFI_ERROR(status)){
+    return status;
+  }
+  FreePool(gop_handles);
+  return EFI_SUCCESS;
+}
+
+const CHAR16* GetPixelFormatUnicode(EFI_GRAPHICS_PIXEL_FORMAT fmt){
+  switch(fmt){
+    case PixelRedGreenBlueReserved8BitPerColor:
+      return L"PixelRedGreenBlueReserved8BitPerColor";
+    case PixelBlueGreenRedReserved8BitPerColor:
+      return L"PixelBlueGreenRedReserved8BitPerColor";
+    case PixelBitMask:
+      return L"PixelBitMask";
+    case PixelBltOnly:
+      return L"PixelBltOnly";
+    case PixelFormatMax:
+      return L"PixelFormatMax";
+    default:
+      return L"IncalidPixelFormat";
+  }
+}
 EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
                             EFI_SYSTEM_TABLE *SystemTable) {
   CHAR8 memmap_buf[4096 * 4];
@@ -121,6 +170,8 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
   EFI_FILE_PROTOCOL* root_dir;
   EFI_STATUS status;
   
+  gST->ConOut->ClearScreen(gST->ConOut);
+  Print(L"Hello, World!");
   status = OpenRootDir(ImageHandle, &root_dir);
   if(EFI_ERROR(status)) {
     Print(L"Error: OpenRootDir failed: %r\n", status);
@@ -140,20 +191,25 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
 
   EFI_GRAPHICS_OUTPUT_PROTOCOL* gop;
   OpenGOP(ImageHandle, &gop);
-  Print(L"REsolution: %ux%u, Pixel Format: %s, %u pixels/line\n",
+  Print(L"Resolution: %ux%u, Pixel Format: %s, %u pixels/line\n",
         gop->Mode->Info->HorizontalResolution,
         gop->Mode->Info->VerticalResolution,
         GetPixelFormatUnicode(gop->Mode->Info->PixelFormat),
         gop->Mode->Info->PixelsPerScanLine);
-  Print(L"Frame BUffer: 0x%0lx - 0x%0lx, Size: %lu bytes\n",
+  Print(L"Frame Buffer: 0x%0lx - 0x%0lx, Size: %lu bytes\n",
         gop->Mode->FrameBufferBase,
         gop->Mode->FrameBufferBase + gop->Mode->FrameBufferSize,
         gop->Mode->FrameBufferSize);
 
-  UINT8* frame_buffer = (UINT8*)gop->Mode->FrameBufferBase;
-  for (UINTN i = 0; i < gop->Mode->FrameBufferSize; ++i){
-    frame_buffer[i] = 255;
+  UINT32* frame_buffer = (UINT32*)gop->Mode->FrameBufferBase;
+  for (UINTN i = 0; i < gop->Mode->FrameBufferSize /4; ++i){
+    frame_buffer[i] = 0x004169e1;
   }
+
+  gST->ConOut->ClearScreen(gST->ConOut);
+  gST->ConOut->OutputString(gST->ConOut, L"Goodbye, Bootloader...\r\n");
+  gBS->Stall(3000000);
+  gST->ConOut->ClearScreen(gST->ConOut);
 
   EFI_FILE_PROTOCOL* kernel_file;
   root_dir->Open(
@@ -174,13 +230,13 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
   EFI_PHYSICAL_ADDRESS kernel_base_addr = 0x100000;
   gBS->AllocatePages(
     AllocateAddress, EfiLoaderData,
-    (kernel_file_size * 0xfff) / 0x1000, //切り上げ
+    (kernel_file_size + 0xfff) / 0x1000, //切り上げ
     &kernel_base_addr
   );
   kernel_file->Read(kernel_file, &kernel_file_size, (VOID*)kernel_base_addr);
   Print(L"Kernel: 0x0lx (&lu bytes)/n", kernel_base_addr, kernel_file_size);
 
-  EFI_STATUS exit_status; //ブートサービスの停止に使用するステータス
+  EFI_STATUS exit_status = gBS->ExitBootServices(ImageHandle,memmap.map_key); //ブートサービスの停止に使用するステータス
   if(EFI_ERROR(exit_status)){
     exit_status = GetMemoryMap(&memmap);
     if(EFI_ERROR(exit_status)){
