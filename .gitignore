@@ -5,3 +5,4 @@
 *.so
 *.o
 NvVars
+compile_flags.txt
