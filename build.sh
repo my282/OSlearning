@@ -8,7 +8,7 @@ TOOLCHAIN="GCC"
 BUILD_MODE="RELEASE" # または DEBUG
 ORIGINAL_DIR=&(pwd)
 # コピー元のEFIファイル名（あなたのinfのBASE_NAMEに合わせてください）
-EFI_NAME="memorymap.efi"
+EFI_NAME="Bootloader.efi"
 
 # --- ビルド実行 ---
 # --- 成果物の回収 ---
