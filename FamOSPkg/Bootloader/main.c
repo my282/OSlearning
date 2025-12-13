@@ -13,7 +13,37 @@
 #include <Library/PrintLib.h>
 #include <Library/MemoryAllocationLib.h>
 #include <Guid/FileInfo.h>
+// ELFヘッダの定義（64bit用）
+typedef struct {
+    UINT8  e_ident[16];
+    UINT16 e_type;
+    UINT16 e_machine;
+    UINT32 e_version;
+    UINT64 e_entry;
+    UINT64 e_phoff;
+    UINT64 e_shoff;
+    UINT32 e_flags;
+    UINT16 e_ehsize;
+    UINT16 e_phentsize;
+    UINT16 e_phnum;
+    UINT16 e_shentsize;
+    UINT16 e_shnum;
+    UINT16 e_shstrndx;
+} Elf64_Ehdr;
 
+// プログラムヘッダの定義（「ファイルのどこを、メモリのどこに置くか」の情報）
+typedef struct {
+    UINT32 p_type;
+    UINT32 p_flags;
+    UINT64 p_offset;
+    UINT64 p_vaddr;
+    UINT64 p_paddr;
+    UINT64 p_filesz;
+    UINT64 p_memsz;
+    UINT64 p_align;
+} Elf64_Phdr;
+
+#define PT_LOAD 1
 struct MemoryMap {
   UINTN buffer_size;
   VOID *buffer;
@@ -226,21 +256,76 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
 
   EFI_FILE_INFO* file_info = (EFI_FILE_INFO*)file_info_buffer;
   UINTN kernel_file_size = file_info->FileSize;
+// --- ▼▼▼ ここから追加・修正（ELFローダ実装） ▼▼▼ ---
 
-  EFI_PHYSICAL_ADDRESS kernel_base_addr = 0x100000;
-  gBS->AllocatePages(
-    AllocateAddress, EfiLoaderData,
-    (kernel_file_size + 0xfff) / 0x1000, //切り上げ
-    &kernel_base_addr
-  );
-  kernel_file->Read(kernel_file, &kernel_file_size, (VOID*)kernel_base_addr);
-  Print(L"Kernel: 0x0lx (&lu bytes)/n", kernel_base_addr, kernel_file_size);
+  // 1. 一時的なバッファを確保して、ファイルを丸ごと読み込む
+  VOID* kernel_buffer;
+  status = gBS->AllocatePool(EfiLoaderData, kernel_file_size, &kernel_buffer);
+  if (EFI_ERROR(status)) {
+    Print(L"failed to allocate pool: %r\n", status);
+    while(1) __asm__("hlt");
+  }
+  status = kernel_file->Read(kernel_file, &kernel_file_size, kernel_buffer);
+  if (EFI_ERROR(status)) {
+    Print(L"error: %r\n", status);
+    while(1) __asm__("hlt");
+  }
+
+  // 2. ELFヘッダの解析
+  Elf64_Ehdr* ehdr = (Elf64_Ehdr*)kernel_buffer;
+  UINT64 kernel_first_addr, kernel_last_addr;
+  
+  // プログラムヘッダ（セグメント情報）の場所を特定
+  Elf64_Phdr* phdr = (Elf64_Phdr*)((UINT64)ehdr + ehdr->e_phoff);
+  kernel_first_addr = MAX_UINT64;
+  kernel_last_addr = 0;
+
+  // 3. カーネルが使うメモリ範囲（最小アドレス〜最大アドレス）を計算
+  for (UINTN i = 0; i < ehdr->e_phnum; ++i) {
+    if (phdr[i].p_type != PT_LOAD) continue;
+    if (kernel_first_addr > phdr[i].p_vaddr) kernel_first_addr = phdr[i].p_vaddr;
+    if (kernel_last_addr < phdr[i].p_vaddr + phdr[i].p_memsz) {
+      kernel_last_addr = phdr[i].p_vaddr + phdr[i].p_memsz;
+    }
+  }
+
+  // 4. 計算した範囲のメモリを確保（0x100000 〜 必要分）
+  UINTN num_pages = (kernel_last_addr - kernel_first_addr + 0xfff) / 0x1000;
+  status = gBS->AllocatePages(AllocateAddress, EfiLoaderData, num_pages, &kernel_first_addr);
+  if (EFI_ERROR(status)) {
+    Print(L"failed to allocate pages: %r\n", status);
+    while(1) __asm__("hlt");
+  }
+
+  // 5. セグメントのコピー（展開）
+  for (UINTN i = 0; i < ehdr->e_phnum; ++i) {
+    if (phdr[i].p_type == PT_LOAD) {
+      // ファイルの中身をメモリの正しい位置にコピー
+      gBS->CopyMem((VOID*)phdr[i].p_vaddr, (VOID*)((UINT64)kernel_buffer + phdr[i].p_offset), phdr[i].p_filesz);
+      // ファイルサイズよりメモリサイズが大きい場合（BSSなど）、残りを0で埋める
+      UINTN remain_bytes = phdr[i].p_memsz - phdr[i].p_filesz;
+      gBS->SetMem((VOID*)(phdr[i].p_vaddr + phdr[i].p_filesz), remain_bytes, 0);
+    }
+  }
+
+  Print(L"Kernel: 0x%0lx - 0x%0lx\n", kernel_first_addr, kernel_last_addr);
+
+  // 6. エントリーポイントを保存しておく（バッファを消す前に！）
+  UINT64 entry_addr = ehdr->e_entry;
+
+  // 7. 一時バッファの解放
+  gBS->FreePool(kernel_buffer);
+
+  // --- ▲▲▲ 追加終わり ▲▲▲ ---
+  
+  UINT64 frame_buffer_base = gop->Mode->FrameBufferBase;
+  UINT64 frame_buffer_size = gop->Mode->FrameBufferSize;
 
   EFI_STATUS exit_status = gBS->ExitBootServices(ImageHandle,memmap.map_key); //ブートサービスの停止に使用するステータス
   if(EFI_ERROR(exit_status)){
     exit_status = GetMemoryMap(&memmap);
     if(EFI_ERROR(exit_status)){
-      Print(L"failed to get memory map:%r/\n", exit_status);
+      Print(L"failed to get memory map:%r\n", exit_status);
       while(1);
     }
     exit_status = gBS->ExitBootServices(ImageHandle,memmap.map_key);
@@ -249,10 +334,9 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
       while(1);
     }
   }
-  UINT64 entry_addr = *(UINT64*)(kernel_base_addr + 24);
 
-  typedef void EntryPointType(void);
+  typedef void __attribute__((ms_abi))EntryPointType(UINT64,UINT64);
   EntryPointType* entry_point = (EntryPointType*)entry_addr;
-  entry_point();
+  entry_point(frame_buffer_base, frame_buffer_size);
   return EFI_SUCCESS;
 }
