@@ -231,14 +231,12 @@ EFIAPI EFI_STATUS UefiMain(EFI_HANDLE ImageHandle,
         gop->Mode->FrameBufferBase + gop->Mode->FrameBufferSize,
         gop->Mode->FrameBufferSize);
 
-  UINT32* frame_buffer = (UINT32*)gop->Mode->FrameBufferBase;
-  for (UINTN i = 0; i < gop->Mode->FrameBufferSize /4; ++i){
-    frame_buffer[i] = 0x004169e1;
-  }
-
   gST->ConOut->ClearScreen(gST->ConOut);
   gST->ConOut->OutputString(gST->ConOut, L"Goodbye, Bootloader...\r\n");
-  gBS->Stall(3000000);
+  for(int i = 0; i < 3; i++){
+    Print(L".");
+    gBS->Stall(1000000);
+  }
   gST->ConOut->ClearScreen(gST->ConOut);
 
   EFI_FILE_PROTOCOL* kernel_file;

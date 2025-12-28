@@ -6,3 +6,4 @@
 *.o
 NvVars
 compile_flags.txt
+build.log
