@@ -1,6 +1,6 @@
 Build environment: Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39
-SOURCE_DATE_EPOCH not set - using 1765712631
-Build start time: 20:43:51, Dec.14 2025
+SOURCE_DATE_EPOCH not set - using 1766895262
+Build start time: 13:14:22, Dec.28 2025
 
 WORKSPACE        = /home/famous282/src/edk2
 EDK_TOOLS_PATH   = /home/famous282/src/edk2/BaseTools
@@ -8,8 +8,8 @@ CONF_PATH        = /home/famous282/src/edk2/Conf
 PYTHON_COMMAND   = python3
 
 
-Processing meta-data .
-Architecture(s)  = X64
+Processing meta-data 
+.Architecture(s)  = X64
 Build target     = RELEASE
 Toolchain        = GCC
 
@@ -18,8 +18,8 @@ Active Platform          = /home/famous282/src/edk2/OvmfPkg/OvmfPkgX64.dsc
 Building ... /home/famous282/src/edk2/MdePkg/Library/UefiLib/UefiLib.inf [X64]
 Building ... /home/famous282/src/edk2/MdePkg/Library/UefiDriverEntryPoint/UefiDriverEntryPoint.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/UefiDevicePathLibDevicePathProtocol/UefiDevicePathLibDevicePathProtocol.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/UefiRuntimeServicesTableLib/UefiRuntimeServicesTableLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -52,8 +52,8 @@ Building ... /home/famous282/src/edk2/MdePkg/Library/RegisterFilterLibNull/Regis
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/Library/DxeTcpIoLib/DxeTcpIoLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/PxeBcPcdProducerLib/PxeBcPcdProducerLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/SmbiosVersionLib/DetectSmbiosVersionLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -82,10 +82,10 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/Library/CpuExceptionHandlerLib/PeiCpuExceptionHandlerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/Library/MpInitLib/PeiMpInitLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/BaseMemEncryptSevLib/PeiMemEncryptSevLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/ResetVector/ResetVector.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/Library/DxeHttpLib/DxeHttpLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -96,8 +96,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/LockBoxLib/LockBoxBaseLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/BootMaintenanceManagerUiLib/BootMaintenanceManagerUiLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/BootManagerUiLib/BootManagerUiLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/DeviceManagerUiLib/DeviceManagerUiLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -142,8 +142,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/MpInitLibDepLib/DxeMpInitLibMpDepLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/Library/MpInitLib/DxeMpInitLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/Library/MicrocodeLib/MicrocodeLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/EmbeddedPkg/Library/TimeBaseLib/TimeBaseLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -224,8 +224,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/CryptoPkg/Library/BaseCryptLib/SecCryptLib.inf [X64]
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/AcpiTimerLib/BaseRomAcpiTimerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/BaseMemEncryptSevLib/SecMemEncryptSevLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/CcExitLib/SecCcExitLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -236,10 +236,10 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/CryptoPkg/Library/BaseCryptLib/BaseCryptLib.inf [X64]
 Building ... /home/famous282/src/edk2/NetworkPkg/Library/DxeUdpIoLib/DxeUdpIoLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/UefiDriverEntryPointFwCfgOverrideLib/UefiDriverEntryPointFwCfgOverrideLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Library/QemuFwCfgSimpleParserLib/QemuFwCfgSimpleParserLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/FileExplorerLib/FileExplorerLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -253,11 +253,11 @@ Building ... /home/famous282/src/edk2/ShellPkg/Library/UefiShellDebug1CommandsLi
 Building ... /home/famous282/src/edk2/ShellPkg/Library/UefiShellDriver1CommandsLib/UefiShellDriver1CommandsLib.inf [X64]
 Building ... /home/famous282/src/edk2/ShellPkg/Library/UefiShellLevel3CommandsLib/UefiShellLevel3CommandsLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/ShellPkg/Library/UefiShellLevel1CommandsLib/UefiShellLevel1CommandsLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/ShellPkg/Library/UefiShellLevel2CommandsLib/UefiShellLevel2CommandsLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/UefiApplicationEntryPoint/UefiApplicationEntryPoint.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
@@ -277,8 +277,8 @@ Building ... /home/famous282/src/edk2/MdePkg/Library/PeimEntryPoint/PeimEntryPoi
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/CryptoPkg/Library/BaseCryptLib/PeiCryptLib.inf [X64]
 Building ... /home/famous282/src/edk2/CryptoPkg/Library/OpensslLib/OpensslLibCrypto.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/CryptoPkg/Library/IntrinsicLib/IntrinsicLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/BaseSynchronizationLib/BaseSynchronizationLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -358,7 +358,6 @@ Building ... /home/famous282/src/edk2/MdePkg/Library/PeiServicesLib/PeiServicesL
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/PeiHobLib/PeiHobLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/PeiMemoryAllocationLib/PeiMemoryAllocationLib.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/PeiServicesTablePointerLibIdt/PeiServicesTablePointerLibIdt.inf [X64]
@@ -366,8 +365,9 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/BasePcdLibNull/BasePcdLibNull.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/UefiBootManagerLib/UefiBootManagerLib.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Library/UefiHiiLib/UefiHiiLib.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdePkg/Library/BasePerformanceLibNull/BasePerformanceLibNull.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -395,12 +395,12 @@ Building ... /home/famous282/src/edk2/NetworkPkg/TcpDxe/TcpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/MonotonicCounterRuntimeDxe/MonotonicCounterRuntimeDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/UefiPxeBcDxe/UefiPxeBcDxe.inf [X64]
-Building ... /home/famous282/src/edk2/OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
+Building ... /home/famous282/src/edk2/OvmfPkg/QemuVideoDxe/QemuVideoDxe.inf [X64]
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/SmbiosDxe/SmbiosDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Application/BootManagerMenuApp/BootManagerMenuApp.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -433,11 +433,11 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/Universal/Acpi/S3Resume2Pei/S3Resume2Pei.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Application/UiApp/UiApp.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/UefiCpuPkg/CpuIo2Dxe/CpuIo2Dxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/ShellPkg/DynamicCommand/VariablePolicyDynamicCommand/VariablePolicyDynamicCommand.inf [X64]
+make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/SmbiosPlatformDxe/SmbiosPlatformDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/EmuVariableFvbRuntimeDxe/Fvb.inf [X64]
@@ -470,10 +470,10 @@ Building ... /home/famous282/src/edk2/MdeModulePkg/Core/Dxe/DxeMain.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/PlatformDxe/Platform.inf [X64]
 Building ... /home/famous282/src/edk2/MdeModulePkg/Core/RuntimeDxe/RuntimeDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/IncompatiblePciDeviceSupportDxe/IncompatiblePciDeviceSupport.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Acpi/AcpiTableDxe/AcpiTableDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Metronome/Metronome.inf [X64]
@@ -495,8 +495,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioKeyboardDxe/VirtioKeyboard.inf [X64]
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Usb/UsbKbDxe/UsbKbDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/DevicePathDxe/DevicePathDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Console/ConSplitterDxe/ConSplitterDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -504,8 +504,8 @@ Building ... /home/famous282/src/edk2/OvmfPkg/TdxDxe/TdxDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Disk/UnicodeCollation/EnglishDxe/EnglishDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/famous282/src/edk2/Conf/.cache/6490f1c5-ebcc-4665-8892-0075b9bb49b7CpuDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/famous282/src/edk2/Conf/.cache/6490f1c5-ebcc-4665-8892-0075b9bb49b7CpuDxe.inf [X64]
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Scsi/ScsiBusDxe/ScsiBusDxe.inf [X64]
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Pci/EhciDxe/EhciDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -515,8 +515,8 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/SnpDxe/SnpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Ata/AtaAtapiPassThru/AtaAtapiPassThru.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/FamOSPkg/Bootloader/Bootloader.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioGpuDxe/VirtioGpu.inf [X64]
 "gcc" -MMD -MF /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/main.obj.deps -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=BootloaderStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -c -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/./main.obj -I/home/famous282/src/edk2/FamOSPkg/Bootloader -I/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG -I/home/famous282/src/edk2/MdePkg -I/home/famous282/src/edk2/MdePkg/Include -I/home/famous282/src/edk2/MdePkg/Test/UnitTest/Include -I/home/famous282/src/edk2/MdePkg/Test/Mock/Include -I/home/famous282/src/edk2/MdePkg/Library/MipiSysTLib/mipisyst/library/include -I/home/famous282/src/edk2/MdePkg/Include/X64 /home/famous282/src/edk2/FamOSPkg/Bootloader/main.c
@@ -532,10 +532,7 @@ Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Pci/UhciDxe/UhciDxe.inf [
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/ReportStatusCodeRouter/RuntimeDxe/ReportStatusCodeRouterRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-rm -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.lib
-"gcc-ar" cr /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.lib  @/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/object_files.lst
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Pci/NvmExpressDxe/NvmExpressDxe.inf [X64]
-"gcc" -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,_ModuleEntryPoint -u _ModuleEntryPoint -Wl,-Map,/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os -Wl,--start-group,@/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/static_library_files.lst,--end-group -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=BootloaderStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=/home/famous282/src/edk2/BaseTools/Scripts/GccBase.lds -Wno-error
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Console/TerminalDxe/TerminalDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -549,8 +546,11 @@ Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/StatusCodeHandler/P
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/PCD/Pei/Pcd.inf [X64]
 make: Nothing to be done for 'tbuild'.
+rm -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.lib
+"gcc-ar" cr /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.lib  @/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/object_files.lst
 Building ... /home/famous282/src/edk2/NetworkPkg/MnpDxe/MnpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+"gcc" -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,_ModuleEntryPoint -u _ModuleEntryPoint -Wl,-Map,/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os -Wl,--start-group,@/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/static_library_files.lst,--end-group -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=BootloaderStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=/home/famous282/src/edk2/BaseTools/Scripts/GccBase.lds -Wno-error
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/FaultTolerantWriteDxe/FaultTolerantWriteDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/LinuxInitrdDynamicShellCommand/LinuxInitrdDynamicShellCommand.inf [X64]
@@ -563,23 +563,23 @@ Building ... /home/famous282/src/edk2/OvmfPkg/AmdSevDxe/AmdSevDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/DpcDxe/DpcDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Ata/AtaBusDxe/AtaBusDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioBlkDxe/VirtioBlk.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/Mtftp4Dxe/Mtftp4Dxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioNetDxe/VirtioNet.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Disk/DiskIoDxe/DiskIoDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Disk/RamDiskDxe/RamDiskDxe.inf [X64]
-Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
+Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/CapsuleRuntimeDxe/CapsuleRuntimeDxe.inf [X64]
 Building ... /home/famous282/src/edk2/ShellPkg/Application/Shell/Shell.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/QemuFlashFvbServicesRuntimeDxe/FvbServicesRuntimeDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/Udp4Dxe/Udp4Dxe.inf [X64]
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioRngDxe/VirtioRng.inf [X64]
 make: Nothing to be done for 'tbuild'.
@@ -588,52 +588,43 @@ make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Pci/XhciDxe/XhciDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Acpi/BootGraphicsResourceTableDxe/BootGraphicsResourceTableDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Bus/Isa/Ps2KeyboardDxe/Ps2KeyboardDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
-Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/StatusCodeHandler/RuntimeDxe/StatusCodeHandlerRuntimeDxe.inf [X64]
 Building ... /home/famous282/src/edk2/FatPkg/EnhancedFatDxe/Fat.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/PCD/Dxe/Pcd.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/ArpDxe/ArpDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/QemuRamfbDxe/QemuRamfbDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/AcpiPlatformDxe/AcpiPlatformDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioSerialDxe/VirtioSerial.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/NetworkPkg/VlanConfigDxe/VlanConfigDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Disk/PartitionDxe/PartitionDxe.inf [X64]
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Core/Pei/PeiMain.inf [X64]
 make: Nothing to be done for 'tbuild'.
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/Console/ConPlatformDxe/ConPlatformDxe.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/DriverHealthManagerDxe/DriverHealthManagerDxe.inf [X64]
-"objcopy"  /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
-cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.debug
+make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/VirtioPciDeviceDxe/VirtioPciDeviceDxe.inf [X64]
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
-"objcopy" --strip-unneeded -R .eh_frame /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
 make: Nothing to be done for 'tbuild'.
-"objcopy"  /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
 Building ... /home/famous282/src/edk2/NetworkPkg/IScsiDxe/IScsiDxe.inf [X64]
-cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.debug /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/Bootloader.debug
-"GenFw" -e UEFI_APPLICATION -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll --zero
-cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG
-make: Nothing to be done for 'tbuild'.
-cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/Bootloader.efi
 Building ... /home/famous282/src/edk2/OvmfPkg/PlatformPei/PlatformPei.inf [X64]
-cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/*.map /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT
 Building ... /home/famous282/src/edk2/OvmfPkg/Tcg/TdTcg2Dxe/TdTcg2Dxe.inf [X64]
 "gcc" -MMD -MF /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/AutoGen.obj.deps -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=IScsiDxeStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -c -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/./AutoGen.obj -I/home/famous282/src/edk2/NetworkPkg/IScsiDxe -I/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG -I/home/famous282/src/edk2/MdePkg -I/home/famous282/src/edk2/MdePkg/Include -I/home/famous282/src/edk2/MdePkg/Test/UnitTest/Include -I/home/famous282/src/edk2/MdePkg/Test/Mock/Include -I/home/famous282/src/edk2/MdePkg/Library/MipiSysTLib/mipisyst/library/include -I/home/famous282/src/edk2/MdePkg/Include/X64 -I/home/famous282/src/edk2/MdeModulePkg -I/home/famous282/src/edk2/MdeModulePkg/Include -I/home/famous282/src/edk2/MdeModulePkg/Test/Mock/Include -I/home/famous282/src/edk2/CryptoPkg -I/home/famous282/src/edk2/CryptoPkg/Include -I/home/famous282/src/edk2/NetworkPkg -I/home/famous282/src/edk2/NetworkPkg/Include /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/AutoGen.c
 Building ... /home/famous282/src/edk2/SecurityPkg/Hash2DxeCrypto/Hash2DxeCrypto.inf [X64]
-make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/OvmfPkg/Sec/SecMain.inf [X64]
+make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 make: Nothing to be done for 'tbuild'.
 Building ... /home/famous282/src/edk2/MdeModulePkg/Universal/SecurityStubDxe/SecurityStubDxe.inf [X64]
@@ -644,6 +635,15 @@ rm -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe
 "gcc-ar" cr /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/IScsiDxe.lib  @/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/object_files.lst
 make: Nothing to be done for 'tbuild'.
 "gcc" -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll -nostdlib -Wl,-n,-q,--gc-sections -z common-page-size=0x40 -Wl,--entry,_ModuleEntryPoint -u _ModuleEntryPoint -Wl,-Map,/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.map,--whole-archive -Wl,-melf_x86_64,--oformat=elf64-x86-64,-pie -Wl,--fatal-warnings -Wl,-z,noexecstack -Wl,-z,notext -flto -Os -Wl,--start-group,@/home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/OUTPUT/static_library_files.lst,--end-group -g -Os -fshort-wchar -fno-builtin -fno-strict-aliasing -Wall -Werror -Wno-array-bounds -include AutoGen.h -fno-common -fstack-protector -ffunction-sections -fdata-sections -DSTRING_ARRAY_NAME=IScsiDxeStrings -mstack-protector-guard=global -m64 "-DEFIAPI=__attribute__((ms_abi))" -maccumulate-outgoing-args -mno-red-zone -Wno-address -mcmodel=small -fpie -fno-asynchronous-unwind-tables -Wno-address -fno-omit-frame-pointer -flto -DUSING_LTO -Wno-unused-but-set-variable -Wno-unused-const-variable -DMDEPKG_NDEBUG -mno-mmx -mno-sse -D DISABLE_NEW_DEPRECATED_INTERFACES -D TDX_GUEST_SUPPORTED -D ENABLE_MD5_DEPRECATED_INTERFACES -Wl,--defsym=PECOFF_HEADER_SIZE=0x228 -Wl,--script=/home/famous282/src/edk2/BaseTools/Scripts/GccBase.lds -Wno-error
+"objcopy"  /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
+cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.debug
+"objcopy" --strip-unneeded -R .eh_frame /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
+"objcopy"  /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll
+cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.debug /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/Bootloader.debug
+"GenFw" -e UEFI_APPLICATION -o /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/Bootloader.dll --zero
+cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG
+cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT/Bootloader.efi /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/Bootloader.efi
+cp -p -f /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/DEBUG/*.map /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/FamOSPkg/Bootloader/Bootloader/OUTPUT
 lto-wrapper: warning: using serial compilation of 3 LTRANS jobs
 lto-wrapper: note: see the ‘-flto’ option documentation for more information
 "objcopy"  /home/famous282/src/edk2/Build/OvmfX64/RELEASE_GCC/X64/NetworkPkg/IScsiDxe/IScsiDxe/DEBUG/IScsiDxe.dll
@@ -807,9 +807,9 @@ FV Space Information
 SECFV [23%Full] 212992 (0x34000) total, 49584 (0xc1b0) used, 163408 (0x27e50) free
 PEIFV [23%Full] 851968 (0xd0000) total, 202856 (0x31868) used, 649112 (0x9e798) free
 DXEFV [22%Full] 15204352 (0xe80000) total, 3424680 (0x3441a8) used, 11779672 (0xb3be58) free
-FVMAIN_COMPACT [31%Full] 3440640 (0x348000) total, 1079800 (0x1079f8) used, 2360840 (0x240608) free
+FVMAIN_COMPACT [31%Full] 3440640 (0x348000) total, 1079840 (0x107a20) used, 2360800 (0x2405e0) free
 
 - Done -
-Build end time: 20:44:04, Dec.14 2025
-Build total time: 00:00:13
+Build end time: 13:14:33, Dec.28 2025
+Build total time: 00:00:11
 

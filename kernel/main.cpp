@@ -1,4 +1,4 @@
-#include <cstdint>
+#include <stdint.h>
 
 extern "C" void __attribute__((ms_abi)) KernelMain(uint64_t frame_buffer_base,
                                                    uint64_t frame_buffer_size) {
